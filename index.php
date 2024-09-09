@@ -84,4 +84,10 @@ $name = "Saburo";
 echo "Hello {$name}";
 echo 'Hello {$name}';
 
-？？？
+
+
+// ユーザーに文字列を入力してもらう方法
+<?php
+echo "Your name? ";
+$name = fgets(STDIN);    //JavaScriptでは、prompt
+echo $name;
