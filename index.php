@@ -91,3 +91,19 @@ echo 'Hello {$name}';
 echo "Your name? ";
 $name = fgets(STDIN);    //JavaScriptでは、prompt
 echo $name;
+
+
+
+// 文字列の連結/文字へのアクセス
+<?php
+echo "Your name? ";
+$name = trim(fgets(STDIN));
+// echo "Hello {$name}" . PHP_EOL;
+// echo "Hello " . $name . PHP_EOL;
+echo $name[0];
+echo $name[1];
+echo $name[2];
+$name[0] = "*";
+$name[1] = "*";
+$name[2] = "*";
+echo $name;
