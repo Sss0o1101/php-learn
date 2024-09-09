@@ -72,3 +72,14 @@ RATE = 1.08;
 echo $price * 120 * RATE;
 echo $price * 130 * RATE;
 echo $price * 140 * RATE;
+
+
+
+// 文字列を表現(テンプレートリテラル)
+<?php
+echo 'Hello Taro';
+echo "Hello Jiro";
+
+$name = "Saburo";
+echo "Hello {$name}";
+echo 'Hello {$name}';
