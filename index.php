@@ -31,3 +31,20 @@ $price = 150;
 echo $price * 120;
 echo $price * 130;
 echo $price * 140;
+
+// 変数に値を再代入
+
+<?php
+$price = 150;
+echo $price * 120 . PHP_EOL;
+echo $price * 130 . PHP_EOL;
+echo $price * 140 . PHP_EOL;
+
+// $price = 151;
+// $price = $price + 1;
+// $price += 1;
+$price++;
+// $price -= 1;
+// $price--;
+echo $price * 120;
+echo $price * 130 . PHP
