@@ -20,3 +20,14 @@ echo 10 / 3;
 echo 10 % 3;
 echo 10 + 2 * 3;
 echo (10 + 2) * 3;
+
+// PHPにおける変数
+<?php
+echo 150 * 120;
+echo 150 * 130;
+echo 150 * 140;
+
+$price = 150;
+echo $price * 120;
+echo $price * 130;
+echo $price * 140;
