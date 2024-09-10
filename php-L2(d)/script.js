@@ -166,3 +166,19 @@ while (command !== 0) {
   command = Number(prompt('Menu 1, 2, 3 or 0 to exit'));
 }
 // ユーザーからコマンドを何度でも受け取れるようなプログラム。また、「 prompt() 」 でメニューの 1、2、3 から選んでね、もしくは 0 で終了するよ、というメッセージとともに数値を受け取ったとする。
+
+
+
+/*
+do ... whileの構文--------------------------------------------
+*/
+let command;
+
+do {
+  command = Number(prompt('Menu 1, 2, 3 or 0 to exit'));
+  if (command === 0) {
+    console.log('Exited');
+  } else {
+    console.log(`Menu ${command} processed.`);
+  }
+} while (command !== 0);
