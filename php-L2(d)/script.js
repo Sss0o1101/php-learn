@@ -65,14 +65,14 @@ const color = prompt('Color?');
 
 switch (color) {
     case 'red':
-        console.console.log('stop');
+        console.log('stop');
         break;
     case 'yellow':
-        console.console.log('Slow down!');
+        console.log('Slow down!');
         break;
     case 'blue':
     case 'green':
-        console.console.log('Go!');
+        console.log('Go!');
         break;
     default:
         console.log('Wrong color');
@@ -80,3 +80,72 @@ switch (color) {
 }
 //青信号は国によっては緑信号だったりするので、ここで blue もしくは green だったらという条件にしたい場合、
 //case を case 'blue'; case 'green'; のように繋げて 2 行書く
+
+
+
+
+/*
+forの中でforを使う方法--------------------------------------------
+*/
+
+let price;
+const rate = 1.1;
+
+price = 150;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
+
+price++;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
+//150 円 151 円のときだけでなく、160 円までの売り上げを知りたかった時のケース
+
+let price;
+const rate = 1.1;
+
+for (let price = 150; price < 160; price++) {
+    console.log(`price: ${price}`);
+}
+
+price = 150;
+console.log(price * 120 * rate);
+console.log(price * 130 * rate);
+console.log(price * 140 * rate);
+
+//120 から 140 まで、10 ずつ増やしたいが、10 増やして再代入していくには、以前に見たこちらの記法を使う。
+
+const rate = 1.1;
+
+for (let price = 150; price <= 160; price++) {
+  console.log(`Price: ${price}`);
+  for (let amount = 120; amount <= 140; amount+=10) {
+    console.log(price * amount * rate);
+  }
+}
+
+/*
+論理演算子--------------------------------------------
+*/
+
+const english = Number(prompt("English"));
+const math = Number(prompt(math));
+
+if (english >= 80 && math >= 80) {
+    console.log("A");
+} else {
+    console.log("B");
+}
+//英語が 80 点以上なおかつ数学が 80 点以上のケース
+
+const english = Number(prompt('English?'));
+const math = Number(prompt('Math?'));
+
+if (!(english >= 80 && math >= 80)) {
+  console.log('A');
+} else {
+  console.log('B');
+}
+//この条件全体を否定して、英語が 80 点以上なおかつ数学が 80 点以上ではなかったらとしたかったら 
+//if (!(english >= 80 && math >= 80)) のように書けば OK.
