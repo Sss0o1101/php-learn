@@ -149,3 +149,20 @@ if (!(english >= 80 && math >= 80)) {
 }
 //この条件全体を否定して、英語が 80 点以上なおかつ数学が 80 点以上ではなかったらとしたかったら 
 //if (!(english >= 80 && math >= 80)) のように書けば OK.
+
+
+
+/*
+whileの構文--------------------------------------------
+*/
+
+// const command = Number(prompt('Menu 1, 2, 3 or 0 to exit'));
+// console.log(`Menu ${command} processed.`);
+
+let command = Number(prompt('Menu 1, 2, 3 or 0 to exit'));
+
+while (command !== 0) {
+  console.log(`Menu ${command} processed.`);
+  command = Number(prompt('Menu 1, 2, 3 or 0 to exit'));
+}
+// ユーザーからコマンドを何度でも受け取れるようなプログラム。また、「 prompt() 」 でメニューの 1、2、3 から選んでね、もしくは 0 で終了するよ、というメッセージとともに数値を受け取ったとする。
