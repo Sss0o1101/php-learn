@@ -63,3 +63,23 @@ switch ($signal) {
         echo "Wrong signal";
         break;
 }
+
+
+
+// PHPにおける、forの構文
+<?php
+for ($i = 0; $i < 3; $i++) {
+    echo "{$i} Hello";
+}
+
+echo 4 * 1;
+echo 4 * 2;
+echo 4 * 3;
+...
+echo 4 * 9;
+
+for ($i = 1; $i <= 9; $i++) {
+    echo 4 * $i;
+}
+//九九の 4 の段
+
