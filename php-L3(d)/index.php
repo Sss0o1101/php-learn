@@ -46,3 +46,18 @@ session_name	         セッション名を確認できる
 session_regenerate_id	 セッションIDを再発行できる
 session_unset	         セッション変数を開放できる
 session_destroy	         全セッションデータを破棄できる
+
+
+
+
+<!-- ユーザー定義関数 -->
+<?php
+function triple($num) // 仮引数
+{
+    return $num * 3;
+}
+
+echo triple(10) // 実引数
+echo triple(4) * 3; // 実引数
+
+// 整数値を 3 倍にしてくれる triple という関数
